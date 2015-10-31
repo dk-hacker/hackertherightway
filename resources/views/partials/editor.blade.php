@@ -1,0 +1,1 @@
+<div class="parent"><textarea id="editor" name="content">{!! $post->content or "" !!}</textarea></div>

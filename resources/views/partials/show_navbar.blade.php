@@ -1,0 +1,13 @@
+<nav class="navbar" id="top-navbar">
+	<h4>
+		{{$post->title or "Share your experience & knowledge"}}
+		<br>
+		@if(!Request::is('posts/create'))
+		<span class="meta">{{$post->user->name}}, 最后更新于 {{$post->updated_at->toDateTimeString()}}</span>
+		@endif
+	</h4>
+	<ul class="navbar-menu right clearfix">
+		<li><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACGElEQVRYR+1X3VHDMAyW7LzTDYAJaC71M2UCugEwAWUCYALYAJiAbkD77PQcJoARYIBYnDg3Fxznh17SBw7f5cWRrc/yp08yQsehtb5BxGs2J6ITpdRSaz1FxBc3t1JKTTtuV5hh1wX/AHYWAWPMARHt+1djrT0HAP54zIUQmbV2DAD3jgOZUirueqUbuwoHyif97WbO/h0AMgBYTCaTp7Y9hgBQ+CSiLIqiiziOGVBwDArAefyQUh7GcfwRQtCYhi7PFwCw5y1+IqLHzZwQgnkzA4DToBPEqyRJvrnij1Yd0FovEfG4vJCIbpVSN/5m6/X6nIge/HkiqhWpXgGw4zRN+b6PPMC7A1ATsd0AMMaM8zzn2jAqRwCH5gCLV57nzBMm2g/nAPAqpZxulQV8ilBIS4Jz0CQ0TL4oimZ1znntViRsUzfv/0JKeVsnRrsA8I0HES+SJCm0YwNyKwC+Djjy8XWwGPHnCxf7CypiLwDKIXdgliEQoSj0DsARt2jf2hR0EABpmvI1PAckuSLhQwFgsp1VCk9AkHoFYIwZWWsviahSqBiMlDL20zEIgLsiIQRZa0eIOA/kPVdIJloxiIhb8tq2vK4iVgA4WX37pdi0mX86Oa50RqGOqHhstO3a5b+T43lnJeyhKeWX0woRMynlY1M/2KkWbE5ZBsbl1VqbCSHGRHTHNk1dT1OkWrMgBOD/bfinIvAFdmi9ME55Br4AAAAASUVORK5CYII="></a></li>
+		<li><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1klEQVRYR+1Wy3XaUBCd0Xhvl4ArMDp6WseuwKaC2BWYVGCoIOkgpoJABSZriSO7gkAHsEeanMt54jyBvrBwFtEK0GPmzn1z5w7TJz/8yfnp3wSQJEkvTdN7Zr7Ksuw9DMPZKUwlSXKlqjfMvPJ9f1kWo8CATfyTiG7dw6r6fnFx8eT7/nsbIEi83W5fmHnonF8y82sQBGM3xh7AYrF4VNXvRHRVkWQtIn5VJfl/bPI3Zu6XxTksZgfAJkfldc+HiNz6vr+uO2RZBFOXNedQzB0Y5SRJ+mmaJg3JJyIybErusICYr0R00wDimuM4nhLRfc3BiTHm8SD4s6r2Lc1z0EpEszAM5+5VpGmK75UgVHUMAFqVnJm/BUHwI38fxzE+PxPRhJnnWZYtPc/rAwwRfSWiuYgMcqZsP0yZ+UtFjmUlAGZ+CoIANJLTWCwij2VqwBmH9pExZuIARxwAPHoAAPS5NG1U9cGl015Tr6kJnWZeGWN6bjaHPffnFQDktOLFxibZ6z2KohH0LCK9Nk0Yx/GrqvbCMCzMkgq1TaACTL0/RASZPRzqHABVdeoy0jSMELNqXliWUPSlqt7t5oBN8iYitRovTDDmjzaMlIG10kefPOwAWJpfmipz3wN9zkoURbfM/Nbx/+MwDEddJmEh/rkAconvADh90KWIqTFmcCqDInKNPtmbEbq3Sqs1g+oJw+gE+n/nKtkDOIGFDTOPIDk7HVuz515fYR/o2Ix7j+jI3gzdn6M9WsmiKJrXzG63yoExBkYGOx/aXaKJhZWI9F35lgHA5GuSJAJhN9itWS0tneB+kF5hnhxCbnMN7h06hgNaf9VRcBYAuCNMiojW7n6QJ7RNDP/HSoerOXK/swAYYzqt8GV7xjkAjuy1qdviOIavFPbCkwGo6n5wNCXO35epqS0A+HjByz3PW+bbUVsAsN0sywpLCVa2Q1vvdK9tk3c59x/AX5tU4x3RxrEcAAAAAElFTkSuQmCC"></a></li>
+	</ul>
+</nav>

@@ -1,5 +1,7 @@
 /vendor
+.DS_Store
 /node_modules
 Homestead.yaml
 Homestead.json
 .env
+*~

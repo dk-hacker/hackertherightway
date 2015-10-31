@@ -1,6 +1,6 @@
-@servers(['web' => 'deploy@104.236.186.206'])
+@servers(['web' => 'deploy@104.236.186.206 -p 22800'])
 
-@task('deploy')
+@task('deploy', ['on' => 'web'])
     cd /home/deploy/projects/hackertherightway
     git pull origin master
 @endtask

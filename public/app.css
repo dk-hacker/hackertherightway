@@ -1,0 +1,429 @@
+html,body {
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: #303030;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body, input, button {
+  /*font-family: Georgia, Helvetica;*/
+  font-size: 17px;
+}
+
+h1 {
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h3 {
+  padding: 10px;
+  line-height: 36px;
+}
+
+h3 b {
+  font-size: 27px;
+  color: #2c3e50;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre code {
+  color: #777;
+  font-size: 18px;
+}
+
+blockquote {
+  border-left: 5px solid #fff;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+sub {
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #777;
+  border: 0;
+  display: block;
+  width: 100%;
+  background-color: #F1E9D6;
+}
+
+textarea {
+  font-size: 14px;
+}
+
+button {
+  background-color: #ecf0f1;
+  color: #777;
+  border: 0;
+  padding: 18px 12px;
+  cursor: pointer;
+  outline: none;
+  height: 55px;
+}
+
+button:hover {
+ 	color: #fff;
+  background-color: #303030;
+}
+
+kbd {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: -2px 0.1em 0;
+  padding: 0.1em 0.6em;
+  line-height: 1.4;
+  font-size: 11px;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 0 #bbb, 0 0 0 2px #fff inset;
+  border-radius: 3px;
+  color: #555;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.wk-container {
+	margin: 20px 0px 0;
+}
+
+.wk-wysiwyg {
+  padding: 10px;
+  margin-bottom: 100px;
+  outline: none;
+  background-color: #F1E9D6;
+}
+
+.wk-commands,
+.wk-switchboard {
+  position: fixed;
+  top: 60px;
+  display: inline-block;
+}
+
+.wk-commands {
+  display: none;
+}
+
+.wk-switchboard {
+}
+
+.wk-mode-active {
+	color: #fff;
+  background-color: #303030;
+}
+
+.md-code-block,
+:not(.md-code-block) > .md-code {
+  line-height: 22px;
+  margin: 0;
+}
+.md-code-block {
+  padding: 0;
+}
+:not(.md-code-block) > .md-code {
+  padding: 0px 6px;
+}
+.md-code {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #272722;
+  color: #eee;
+}
+.md-code-block .md-code {
+  display: block;
+}
+
+a:hover .md-code {
+  background-color: #1fa3ca;
+  color: #fff;
+}
+.md-code-comment,
+.md-code-template_comment {
+  color: #998;
+  font-style: italic;
+}
+.md-code-keyword,
+.md-lang-css .md-code-keyword,
+.md-lang-javascript .md-code-title,
+.md-lang-nginx .md-code-title,
+.md-code-subst,
+.md-code-request,
+.md-code-status {
+  color: #777;
+  font-weight: bold;
+}
+.md-code-number,
+.md-code-hexcolor,
+.md-lang-ruby .md-code-constant {
+  color: #099;
+}
+.md-code-string,
+.md-code-tag .md-code-value {
+  color: #d14;
+}
+.md-code-title,
+.md-code-id,
+color #900 {
+  font-weight: bold;
+}
+.md-lang-javascript .md-code-title,
+.md-code-subst {
+  font-weight: normal;
+}
+.md-code-class .md-code-title {
+  color: #458;
+  font-weight: bold;
+}
+.md-code-tag,
+.md-code-tag .md-code-title,
+.md-code-rules .md-code-property {
+  color: #000080;
+  font-weight: normal;
+}
+.md-code-attribute,
+.md-code-variable {
+  color: #008080;
+}
+.md-code-regexp {
+  color: #009926;
+}
+.md-code-symbol,
+.md-lang-ruby .md-code-symbol .md-code-string,
+.md-code-prompt {
+  color: #990073;
+}
+.md-code-built_in {
+  color: #0086b3;
+}
+.md-code-preprocessor,
+.md-code-pragma,
+.md-code-pi,
+.md-code-doctype,
+.md-code-shebang,
+.md-code-cdata {
+  color: #999;
+  font-weight: bold;
+}
+.md-code-deletion {
+  background: #fdd;
+}
+.md-code-addition {
+  background: #dfd;
+}
+.md-code-chunk {
+  color: #aaa;
+}
+.md-mark {
+  background-color: #ffe270;
+  padding: 1px 2px;
+}
+
+/* END */
+
+.right {
+	float: right !important;
+}
+
+.clearfix:before {
+	display: table;
+  content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* Left Menu*/
+.left-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	margin-left: -70px;
+	height: 100%;
+	width: 70px;
+}
+
+.left-menu a {
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+
+	color: white;
+	text-decoration: none;
+}
+
+.left-menu > a:last-child {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	margin-left: -70px;
+	bottom: 30px;
+	width: 120px;
+	text-align: right;
+}
+
+.left-menu > a > img {
+	width: 30px;
+	height: 30px;
+}
+
+/* Navabr */
+.navbar {
+	height: 60px;
+
+	border-bottom: 1px solid #eee;
+}
+
+.navbar .navbar-menu {
+	display: inline-block;
+	margin: 0;
+	padding: 20px 10px;
+}
+
+.navbar .navbar-menu > li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.navbar .navbar-menu > li a > img {
+	height: 20px;
+}
+
+.navbar .navbar-menu > li > small {
+	font-size: 14px;
+	color: #B3B3B3;
+}
+
+/* Nabar Post Head */
+.navbar h4 {
+	display: inline-block;
+	width: 550px;
+	color: #424242;
+	margin: 0;
+	padding: 10px 20px 0;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.navbar h4 > span {
+	color: #399BCB;
+	font-size: 10px;
+}
+
+.container {
+	/* Position & Size */
+	max-width: 710px;
+	margin: 0 auto;
+	height: 100%;
+
+	/* Style */
+	background-color: #fff;
+}
+
+/* Main Board */
+#main {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+
+  overflow: scroll;
+}
+
+#main > table {
+	margin-bottom: 60px;
+	width: 100%;
+
+	border-collapse: collapse;
+}
+
+#main > table > tbody > tr {
+	border-bottom: 1px solid #eee;
+}
+
+#main > table > tbody > tr:hover {
+  background-color: #F7F7F7;
+}
+
+#main > table > tbody > tr > td:first-child {
+	width: 75px;
+}
+
+#main > table > tbody > tr > td img {
+	height: 55px;
+	width: 55px;
+  margin: 0 10px;
+	border-radius: 3px;
+}
+
+#main > table > tbody > tr > td h4 {
+	color: #424242;
+	font-weight: bolder;
+	margin: 10px 0 5px;
+}
+
+#main > table > tbody > tr > td a {
+  color: #424242;
+}
+
+#main > table > tbody > tr > td p {
+	color: #777;
+	margin: 2px 0;
+  font-size: 12px;
+}
+
+
+#main > table > tbody > tr > td p.meta {
+	color: #399BCB;
+	font-size: 12px;
+
+	padding-bottom: 10px;
+}
+
+/* Post Body */
+.post {
+	padding: 10px;
+  border-bottom: 1px solid #eee;
+}
